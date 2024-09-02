@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Awareness</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script defer src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</head>
+<body>
+    <header>
+        <h1>Cybersecurity Awareness in Vulnerability Mitigation Insurance</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('best_practices') }}">Best Practices</a></li>
+                <li><a href="{{ url_for('threats') }}">New Threats</a></li>
+                <li><a href="{{ url_for('policies') }}">Company Policies</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Welcome</h2>
+            <p>
+                This application is designed to help you understand and stay updated on cybersecurity practices in the insurance industry. It offers clear and easy-to-follow information about protecting yourself and your company from cyber threats. You'll find guidance on best practices, such as creating strong passwords and recognizing phishing scams. We also keep you informed about the latest threats that could impact your security and provide insights into your company's specific policies on cybersecurity. Additionally, our interactive training tutorials will help you learn and apply these practices effectively. Whether you're new to cybersecurity or looking to refresh your knowledge, this app is here to support you in maintaining a safe and secure digital environment.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Cybersecurity Awareness App</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Policies</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script defer src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</head>
+<body>
+    <header>
+        <h1>Cybersecurity Awareness</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('best_practices') }}">Best Practices</a></li>
+                <li><a href="{{ url_for('threats') }}">New Threats</a></li>
+                <li><a href="{{ url_for('policies') }}">Company Policies</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Company Policies</h2>
+            <ul id="policies-list">
+                {% for policy in policies %}
+                    <li class="policy-item">
+                        <h3>{{ policy.title }}</h3>
+                        <p>{{ policy.content }}</p>
+                    </li>
+                {% endfor %}
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Cybersecurity Awareness App</p>
+    </footer>
+</body>
+</html>
